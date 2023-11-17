@@ -1,0 +1,15 @@
+.mainButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.impButtons{
+    background-color: rgb(213, 213, 45);
+    padding: 10px;
+    margin: 10px;
+    border-style: groove;
+    border-color: aliceblue;
+}

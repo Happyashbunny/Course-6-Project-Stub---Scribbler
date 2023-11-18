@@ -17,16 +17,66 @@
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
     <div class = "header">
-        <input class="topButtons" type="button" value="Sign Up">
-        <input class="topButtons" type="button" value="Sign In">
+        <input id="Signup" class="topButtons" type="button" value="Sign Up" onclick="showSignUp()">
+        <input id="Signin" class="topButtons" type="button" value="Sign In" onclick="showSignIn()">
         <a id="pageTitle" class="logo-title">Scribbler</a>
         <p class="middleText">Explore, Imagine, Create</p>
     </div>
 
     <div class = "mainButtons">
-        <input class = 'impButtons' type="button" value="All Posts">
-        <input class = 'impButtons' type="button" value="Create Post">
+        <input class='impButtons' type="button" value="All Posts">
+        <input class='impButtons' type="button" value="Create Post">
     </div>
+
+
+    <div id="modal" class="myModal">
+        <h1>You're what we were looking for!</h1>
+        <span onclick = "onCancel('modal')">&times;</span>
+        <form>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name"/><br>
+        <label>Username</label><br>
+        <input type="text" placeholder="Enter your username"/><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter your Password"/><br>
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Re-enter your Password"/><br>
+        <button>Let's Go!</button>
+        </form>
+    </div>
+
+    <div id="modal2" class="myModal">
+        <h1>Good to have you back!</h1>
+        <span onclick="onCancel('modal2')">&times;</span>
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username"/>
+            <label>Password</label>
+            <input type="password" placeholder="You do remember your password, right?"/>
+            <button>Let's Go!</button>
+        </form>
+        
+        <p>Not a member? Close this and &nbsp; <button onclick="showSignUp2('modal2')">Sign Up</button></p>
+    </div>
+
+    <div id="createPostModal">
+        <h1>Go ahead! Create.</h1>
+        <form>
+            <label>What do you wanna call your post?</label>
+            <input type="text" placeholder = "Please be imaginative!"/>
+            <label>Now, write the content of your post here.</label>
+            <input type="text" placeholder = "Its empty in here!">
+            <button>Create!</button>
+        </form>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <script src="../Course+6+Project+Stub+-+Scribbler/scripts/index.js"></script>
 </body>
 
 </html>

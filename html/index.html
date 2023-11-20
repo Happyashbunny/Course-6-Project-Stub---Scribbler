@@ -25,7 +25,7 @@
 
     <div class = "mainButtons">
         <input class='impButtons' type="button" value="All Posts">
-        <input class='impButtons' type="button" value="Create Post">
+        <input class='impButtons' type="button" value="Create Post" onclick="showCreatePostModal()">
     </div>
 
 
@@ -59,13 +59,13 @@
         <p>Not a member? Close this and &nbsp; <button onclick="showSignUp2('modal2')">Sign Up</button></p>
     </div>
 
-    <div id="createPostModal">
+    <div id="CreatePostModal" class="myModal">
         <h1>Go ahead! Create.</h1>
         <form>
             <label>What do you wanna call your post?</label>
             <input type="text" placeholder = "Please be imaginative!"/>
-            <label>Now, write the content of your post here.</label>
-            <input type="text" placeholder = "Its empty in here!">
+            <label>Now, write the content of your post here.</label><br>
+            <textarea id="contentHolder"></textarea>
             <button>Create!</button>
         </form>
     </div>
@@ -76,7 +76,7 @@
     
     
     
-    <script src="../Course+6+Project+Stub+-+Scribbler/scripts/index.js"></script>
+    <script src="C:\Users\ashis\OneDrive\Desktop\FSD\Scribbler Project\Course+6+Project+Stub+-+Scribbler\scripts\index.js"></script>
 </body>
 
 </html>

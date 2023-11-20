@@ -20,3 +20,9 @@ function showSignUp2(id) {
     onCancel(id);
     showSignUp();
 }
+
+function showCreatePostModal(){
+    var x = document.getElementById('CreatePostModal');
+    x.style.top = '50%';
+    x.style.zIndex = '9';
+}

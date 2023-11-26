@@ -3,3 +3,7 @@ function deleteButtonHandler(id) {
     // document.getElementById('container').innerHTML 
     elementToRemove.style.display = 'none';
 }
+
+function ellipseBtnHandler() {
+    
+}
